@@ -115,7 +115,7 @@ export class GdmLiveAudio extends LitElement {
         model: model,
         callbacks: {
           onopen: () => {
-            this.updateStatus('Connected to Bạch Tuyết.');
+            this.updateStatus('Connected to .');
           },
           onmessage: async (message: LiveServerMessage) => {
             const audio =
@@ -158,7 +158,7 @@ export class GdmLiveAudio extends LitElement {
             this.updateError(e.message);
           },
           onclose: (e: CloseEvent) => {
-            this.updateStatus('Bạch Tuyết has disconnected: ' + e.reason);
+            this.updateStatus('Emma has disconnected: ' + e.reason);
           },
         },
         config: {
